@@ -10,6 +10,8 @@ const logger = createLogger();
 const createStoreWithMiddleware = applyMiddleware(thunk, logger)(createStore);
 const store = createStoreWithMiddleware(reducers);
 
+// console.disableYellowBox = true;
+
 const TravelgramApp = () => (
   <Provider store={store}>
     <Navigation />

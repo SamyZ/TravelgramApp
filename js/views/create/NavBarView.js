@@ -9,7 +9,7 @@ const propTypes = {
   navigateBackward: React.PropTypes.func,
 };
 
-const NavBarView = (props) => (
+const NavBarView = props => (
   <View style={navBarStyles.mainContainer} >
     <View style={navBarStyles.contentContainer} >
       <TouchableOpacity style={navBarStyles.backIconContainer} onPress={props.navigateBackward}>

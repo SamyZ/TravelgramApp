@@ -2,31 +2,21 @@ import { StyleSheet } from 'react-native';
 import { navbarHeight, marginInput, marginTop, buttonFlex, iconFlex } from './createStyles';
 import mainStyles from '../mainStyles';
 
-const contentFlex = 0.3;
 
 const friendListStyles = StyleSheet.create({
   mainContainer: {
     position: 'absolute',
-    top: marginTop,
-    bottom: 0,
-    left: marginInput,
-    right: marginInput
-  },
-  topContainer: {
-    flex: buttonFlex,
-  },
-  contentContainer: {
-    flex: contentFlex,
+    marginLeft: marginInput,
+    marginRight: marginInput,
+    zIndex: 10,
     flexDirection: 'row',
-  },
-  bottomContainer: {
-    flex: 1 - buttonFlex - contentFlex,
+    top: 82,
   },
   leftContainer: {
     flex: iconFlex,
   },
-  rightContainer: {
-    flex: 1 - iconFlex,
+  contentContainer: {
+    flex: 1,
   },
   emptyListContainer: {},
   listContainer: {

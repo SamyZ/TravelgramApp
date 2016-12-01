@@ -3,18 +3,19 @@ import mainStyles from './mainStyles';
 
 const menuStyles = StyleSheet.create({
   marginTopContainer: {
-    flex: 0.095,
+    flex: 0.20,
   },
   marginBottomContainer: {
-    flex: 0.095,
+    flex: 0.10,
   },
   itemContainer: {
-    flex: 0.27,
+    flex: 1,
     alignItems: 'center',
   },
+
   menuText: {
-    marginTop: 10,
     fontSize: 20,
+    paddingTop: 10,
     color: mainStyles.color.textMenu,
   },
 });

@@ -12,7 +12,7 @@ const styles = StyleSheet.create({
   },
 });
 
-const TextOpenSans = (props) => <Text style={[styles.font, props.style]}>{props.children}</Text>;
+const TextOpenSans = props => <Text {...props} style={[styles.font, props.style]}>{props.children}</Text>;
 
 TextOpenSans.propTypes = propTypes;
 

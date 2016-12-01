@@ -23,7 +23,7 @@ class HomeView extends React.Component {
 
   render = () => (
     <BackgroundView>
-      <View style={homeStyles.marginContainer} />
+      <View style={homeStyles.marginTopContainer} />
       <TouchableOpacity style={homeStyles.contentContainer} onPress={this.goToMenu} >
         <Image source={instagramLogo} />
         <TextOpenSans style={homeStyles.loginText}>

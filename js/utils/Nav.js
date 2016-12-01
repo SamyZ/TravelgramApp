@@ -1,5 +1,5 @@
 import React from 'react';
-import { Navigator } from 'react-native';
+import { Navigator, BackAndroid } from 'react-native';
 import LoginView from '../views/LoginView';
 import HomeView from '../views/HomeView';
 import MenuView from '../views/MenuView';
@@ -13,6 +13,13 @@ const routeStack = [
 ];
 
 class Navigation extends React.Component {
+  componentDidMount = () => {
+    BackAndroid.addEventListener('hardwareBackPress', () => {
+      this.navigator.pop();
+      return true;
+    });
+  };
+
   configureScene = () => ({ ...Navigator.SceneConfigs.PushFromRight, gestures: {} })
 
   renderScene = (route, navigator) => {
@@ -43,6 +50,7 @@ class Navigation extends React.Component {
 
   render = () => (
     <Navigator
+      ref={(nav) => { this.navigator = nav; }}
       initialRoute={routeStack[1]}
       renderScene={this.renderScene}
       configureScene={this.configureScene}

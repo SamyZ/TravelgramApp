@@ -8,11 +8,10 @@ const propTypes = {
   logoSource: React.PropTypes.number.isRequired,
   children: React.PropTypes.object,
   required: React.PropTypes.bool,
-  style: React.PropTypes.object,
 };
 
-const InputView = (props) => (
-  <View style={[inputStyles.mainContainer, props.style.mainContainer]}>
+const InputView = props => (
+  <View style={inputStyles.mainContainer}>
     <TextOpenSans style={inputStyles.labelFont}>
       {props.label}
       {props.required ? (<TextOpenSans style={inputStyles.requiredFont}>{' *'}</TextOpenSans>) : false}

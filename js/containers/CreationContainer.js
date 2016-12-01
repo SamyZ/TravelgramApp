@@ -2,8 +2,9 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { Navigator } from 'react-native';
 import NavBarView from '../views/create/NavBarView';
-import CreateView from '../views/create/CreateView';
+import SettingsView from '../views/create/SettingsView';
 import ConfirmView from '../views/create/ConfirmView';
+import CreatedView from '../views/create/CreatedView';
 
 const propTypes = {
   navigator: React.PropTypes.object,
@@ -33,7 +34,7 @@ class CreationContainer extends React.Component {
     } else {
       this.setState({
         index: this.state.index - 1,
-        progress: this.state.progress - 1 / routeStack.length,
+        progress: (this.state.progress - 1) / routeStack.length,
       });
       this.creationNavigator.jumpBack();
     }
@@ -46,7 +47,7 @@ class CreationContainer extends React.Component {
     } else {
       this.setState({
         index: newIndex,
-        progress: this.state.progress + 1 / routeStack.length,
+        progress: (this.state.progress + 1) / routeStack.length,
       });
       this.creationNavigator.jumpForward();
     }
@@ -57,10 +58,13 @@ class CreationContainer extends React.Component {
       default:
       case 'Settings':
         return (
-          <CreateView navigateForward={this.navigateForward} />);
+          <SettingsView navigateForward={this.navigateForward} />);
       case 'Confirm':
         return (
           <ConfirmView navigateForward={this.navigateForward} />);
+      case 'Created':
+        return (
+          <CreatedView navigateForward={this.navigateForward} />);
     }
   }
 

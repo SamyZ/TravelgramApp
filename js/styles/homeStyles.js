@@ -2,15 +2,15 @@ import { StyleSheet } from 'react-native';
 import mainStyles from './mainStyles';
 
 const homeStyles = StyleSheet.create({
-  marginContainer: {
-    flex: 0.095,
+  marginTopContainer: {
+    flex: 0.15,
   },
   contentContainer: {
-    flex: 0.905,
+    flex: 1,
     alignItems: 'center',
   },
   loginText: {
-    marginTop: 10,
+    paddingTop: 10,
     fontSize: 20,
     color: mainStyles.color.textMenu,
   },

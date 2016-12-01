@@ -17,28 +17,28 @@ const navBarStyles = StyleSheet.create({
     alignItems: 'center',
   },
   backIconContainer: {
-    flex: 0.18,
+    flex: 0.25,
     flexDirection: 'row',
     justifyContent: 'center',
   },
   textContainer: {
-    flex: 0.64,
+    flex: 1,
     flexDirection: 'row',
     justifyContent: 'center',
   },
   marginContainer: {
-    flex: 0.18,
+    flex: 0.25,
   },
   progressLineContainer: {
     flexDirection: 'row',
   },
   progressLineLeftContainer: {
     borderBottomColor: mainStyles.color.progressLine,
-    borderBottomWidth: 5,
+    borderBottomWidth: 8,
   },
   progressLineRightContainer: {
     borderBottomColor: mainStyles.color.backgroundNeutral,
-    borderBottomWidth: 5,
+    borderBottomWidth: 8,
   },
   font: {
     fontSize: 20,

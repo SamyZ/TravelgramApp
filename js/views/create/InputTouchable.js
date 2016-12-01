@@ -9,12 +9,11 @@ const propTypes = {
   name: React.PropTypes.string.isRequired,
   children: React.PropTypes.object,
   required: React.PropTypes.bool,
-  style: React.PropTypes.object,
   onPress: React.PropTypes.func.isRequired,
 };
 
-const InputTouchable = (props) => (
-  <View style={[inputStyles.mainContainer, props.style.mainContainer]}>
+const InputTouchable = props => (
+  <View style={inputStyles.mainContainer}>
     <TextOpenSans style={inputStyles.labelFont}>
       {props.label}
       {props.required ? (<TextOpenSans style={inputStyles.requiredFont}>{' *'}</TextOpenSans>) : false}

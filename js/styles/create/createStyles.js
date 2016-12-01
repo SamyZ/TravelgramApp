@@ -2,32 +2,24 @@ import { StyleSheet } from 'react-native';
 import mainStyles from '../mainStyles';
 
 export const marginInput = 30;
-export const marginTop = 15;
 export const buttonFlex = 0.15;
-export const iconFlex = 0.2;
-
-export const navbarHeight = 70;
-
-export const usernameInput = StyleSheet.create({
-  mainContainer: {
-    marginTop: marginTop,
-  },
-});
-
-export const travelgramNameInput = StyleSheet.create({
-  mainContainer: {
-    marginTop: 60,
-  },
-});
+export const iconFlex = 0.25;
+export const navbarHeight = 60;
 
 const CreateStyles = StyleSheet.create({
+  marginTopContainer: {
+    flex: 0.04,
+  },
+  marginBottomContainer: {
+    flex: 0.04,
+  },
   mainContainer: {
     flex: 1,
     marginTop: navbarHeight,
     backgroundColor: mainStyles.color.backgroundNeutral,
   },
   inputContainer: {
-    flex: 1 - buttonFlex,
+    flex: 1,
   },
   selectedFriendsContainer: {
     flexDirection: 'row',
@@ -49,6 +41,10 @@ const CreateStyles = StyleSheet.create({
     color: mainStyles.color.textMenuAlternate,
     marginLeft: 10,
   },
+  missingFont: {
+    color: mainStyles.color.missingFields,
+    marginLeft: 10,
+  },
   buttonOuterContainer: {
     flex: buttonFlex,
     alignItems: 'center',
@@ -57,7 +53,6 @@ const CreateStyles = StyleSheet.create({
   buttonContainer: {
     backgroundColor: mainStyles.color.primary,
     padding: 15,
-    marginBottom: 25,
   },
   buttonFont: {
     fontSize: 16,

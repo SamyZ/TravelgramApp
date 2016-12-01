@@ -11,9 +11,9 @@ const inputStyles = StyleSheet.create({
   contentContainer: {
     flexDirection: 'row',
     borderColor: mainStyles.color.inputBorder,
-    borderWidth: 0.8,
+    borderWidth: 1,
     borderStyle: 'solid',
-    height: 58,
+    flexBasis: 200,
   },
   logoContainer: {
     flex: iconFlex,
@@ -22,11 +22,11 @@ const inputStyles = StyleSheet.create({
     backgroundColor: mainStyles.color.backgroundIcon,
   },
   textContainer: {
-    flex: 1 - iconFlex,
+    flex: 1,
     justifyContent: 'center',
   },
   labelFont: {
-    marginBottom: 10,
+    paddingBottom: 6,
     fontSize: 14,
     color: mainStyles.color.textMenuAlternate,
   },

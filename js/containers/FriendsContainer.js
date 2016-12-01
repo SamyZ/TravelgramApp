@@ -10,7 +10,7 @@ const propTypes = {
   inputText: React.PropTypes.string,
   matchingFriends: React.PropTypes.object,
   selectFriend: React.PropTypes.func,
-}
+};
 
 function mapStateToProps(state) {
   return { friends: state.user.friends };
@@ -33,7 +33,7 @@ class FriendsContainer extends React.Component {
 
   render() {
     const matchingFriends = this.filterUsers(this.props.friends, this.props.inputText);
-    return <FriendsListView friends={matchingFriends} selectFriend={this.props.selectFriend}/>;
+    return <FriendsListView friends={matchingFriends} selectFriend={this.props.selectFriend} />;
   }
 }
 

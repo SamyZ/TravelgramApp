@@ -16,11 +16,11 @@ const propTypes = {
   navigateForward: React.PropTypes.func,
 };
 
-class CreateView extends React.Component {
+class ConfirmView extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { checked: false }
-  };
+    this.state = { checked: false };
+  }
 
   onCheck = () => {
     this.setState({ checked: !this.state.checked });
@@ -33,12 +33,12 @@ class CreateView extends React.Component {
           <TextOpenSans style={confirmStyles.explanationFont}>
             In order for your pictures to be geolocated on the map, add a location when you publish them on Instagram !
           </TextOpenSans>
-          <Image source={instaShare} style={confirmStyles.instaShareImage}/>
+          <Image source={instaShare} style={confirmStyles.instaShareImage} />
           <TouchableOpacity style={confirmStyles.confirmContainer} onPress={this.onCheck} >
             <View style={confirmStyles.checkboxContainer}>
               <Image source={this.state.checked ? checked : unchecked} />
             </View>
-            <View  style={confirmStyles.confirmTextContainer}>
+            <View style={confirmStyles.confirmTextContainer}>
               <TextOpenSans style={confirmStyles.explanationFont}>
                 Ticking this box makes your Travelgram private and it will not show up in the "Latest Travelgram" section.
               </TextOpenSans>
@@ -57,6 +57,6 @@ class CreateView extends React.Component {
   }
 }
 
-CreateView.propTypes = propTypes;
+ConfirmView.propTypes = propTypes;
 
-export default CreateView;
+export default ConfirmView;

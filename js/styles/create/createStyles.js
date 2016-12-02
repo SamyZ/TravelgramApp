@@ -7,19 +7,11 @@ export const iconFlex = 0.25;
 export const navbarHeight = 60;
 
 const CreateStyles = StyleSheet.create({
-  marginTopContainer: {
-    flex: 0.04,
-  },
-  marginBottomContainer: {
-    flex: 0.04,
-  },
   mainContainer: {
     flex: 1,
+    justifyContent: 'space-around',
     marginTop: navbarHeight,
     backgroundColor: mainStyles.color.backgroundNeutral,
-  },
-  inputContainer: {
-    flex: 1,
   },
   selectedFriendsContainer: {
     flexDirection: 'row',
@@ -46,13 +38,12 @@ const CreateStyles = StyleSheet.create({
     marginLeft: 10,
   },
   buttonOuterContainer: {
-    flex: buttonFlex,
     alignItems: 'center',
     justifyContent: 'center',
   },
   buttonContainer: {
     backgroundColor: mainStyles.color.primary,
-    padding: 15,
+    padding: 10,
   },
   buttonFont: {
     fontSize: 16,

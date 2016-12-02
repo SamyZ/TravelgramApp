@@ -18,26 +18,26 @@ class MenuView extends React.Component {
 
   render = () => (
     <BackgroundView>
-      <View style={MenuStyles.marginTopContainer} />
-      <TouchableOpacity style={MenuStyles.itemContainer} onPress={this.navigateToCreation} >
-        <Image source={travelgramLogo} />
-        <TextOpenSans style={MenuStyles.menuText}>
-          CREATE MY TRAVELGRAM
-        </TextOpenSans>
-      </TouchableOpacity>
-      <TouchableOpacity style={MenuStyles.itemContainer} onPress={this.navigateToAccount} >
-        <Image source={gogglesIcon} />
-        <TextOpenSans style={MenuStyles.menuText}>
-          MY ACCOUNT
-        </TextOpenSans>
-      </TouchableOpacity>
-      <TouchableOpacity style={MenuStyles.itemContainer} onPress={this.navigateToExplore} >
-        <Image source={mapIcon} />
-        <TextOpenSans style={MenuStyles.menuText}>
-          EXPLORE
-        </TextOpenSans>
-      </TouchableOpacity>
-      <View style={MenuStyles.marginBottomContainer} />
+      <View style={MenuStyles.mainContainer} >
+        <TouchableOpacity style={MenuStyles.itemContainer} onPress={this.navigateToCreation} >
+          <Image source={travelgramLogo} />
+          <TextOpenSans style={MenuStyles.menuText}>
+            CREATE MY TRAVELGRAM
+          </TextOpenSans>
+        </TouchableOpacity>
+        <TouchableOpacity style={MenuStyles.itemContainer} onPress={this.navigateToAccount} >
+          <Image source={gogglesIcon} />
+          <TextOpenSans style={MenuStyles.menuText}>
+            MY ACCOUNT
+          </TextOpenSans>
+        </TouchableOpacity>
+        <TouchableOpacity style={MenuStyles.itemContainer} onPress={this.navigateToExplore} >
+          <Image source={mapIcon} />
+          <TextOpenSans style={MenuStyles.menuText}>
+            EXPLORE
+          </TextOpenSans>
+        </TouchableOpacity>
+      </View>
     </BackgroundView>
   );
 }

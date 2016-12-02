@@ -34,11 +34,11 @@ const navBarStyles = StyleSheet.create({
   },
   progressLineLeftContainer: {
     borderBottomColor: mainStyles.color.progressLine,
-    borderBottomWidth: 8,
+    borderBottomWidth: 5,
   },
   progressLineRightContainer: {
     borderBottomColor: mainStyles.color.backgroundNeutral,
-    borderBottomWidth: 8,
+    borderBottomWidth: 5,
   },
   font: {
     fontSize: 20,

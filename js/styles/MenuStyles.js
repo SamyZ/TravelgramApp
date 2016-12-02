@@ -2,17 +2,13 @@ import { StyleSheet } from 'react-native';
 import mainStyles from './mainStyles';
 
 const menuStyles = StyleSheet.create({
-  marginTopContainer: {
-    flex: 0.20,
-  },
-  marginBottomContainer: {
-    flex: 0.10,
+  mainContainer: {
+    flex: 1,
+    justifyContent: 'space-around',
   },
   itemContainer: {
-    flex: 1,
     alignItems: 'center',
   },
-
   menuText: {
     fontSize: 20,
     paddingTop: 10,

@@ -4,7 +4,6 @@ import { marginInput, iconFlex } from './createStyles';
 
 const inputStyles = StyleSheet.create({
   mainContainer: {
-    flex: 1,
     marginRight: marginInput,
     marginLeft: marginInput,
   },
@@ -13,7 +12,7 @@ const inputStyles = StyleSheet.create({
     borderColor: mainStyles.color.inputBorder,
     borderWidth: 1,
     borderStyle: 'solid',
-    flexBasis: 200,
+    height: 45,
   },
   logoContainer: {
     flex: iconFlex,
@@ -26,7 +25,7 @@ const inputStyles = StyleSheet.create({
     justifyContent: 'center',
   },
   labelFont: {
-    paddingBottom: 6,
+    paddingBottom: 5,
     fontSize: 14,
     color: mainStyles.color.textMenuAlternate,
   },

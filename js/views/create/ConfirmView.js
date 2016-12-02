@@ -26,35 +26,33 @@ class ConfirmView extends React.Component {
     this.setState({ checked: !this.state.checked });
   }
 
-  render = () => {
-    return (
-      <View style={createStyles.mainContainer}>
-        <View style={confirmStyles.contentContainer}>
-          <TextOpenSans style={confirmStyles.explanationFont}>
+  render = () => (
+    <View style={createStyles.mainContainer}>
+      <View style={confirmStyles.contentContainer}>
+        <TextOpenSans style={confirmStyles.explanationFont}>
             In order for your pictures to be geolocated on the map, add a location when you publish them on Instagram !
           </TextOpenSans>
-          <Image source={instaShare} style={confirmStyles.instaShareImage} />
-          <TouchableOpacity style={confirmStyles.confirmContainer} onPress={this.onCheck} >
-            <View style={confirmStyles.checkboxContainer}>
-              <Image source={this.state.checked ? checked : unchecked} />
-            </View>
-            <View style={confirmStyles.confirmTextContainer}>
-              <TextOpenSans style={confirmStyles.explanationFont}>
-                Ticking this box makes your Travelgram private and it will not show up in the "Latest Travelgram" section.
-              </TextOpenSans>
-            </View>
-          </TouchableOpacity>
-        </View>
-        <View style={createStyles.buttonOuterContainer}>
-          <TouchableOpacity style={createStyles.buttonContainer} onPress={this.props.navigateForward}>
-            <TextOpenSans style={StyleSheet.flatten(createStyles.buttonFont)}>
-              I got it, let's go !
+        <Image source={instaShare} style={confirmStyles.instaShareImage} />
+        <TouchableOpacity style={confirmStyles.confirmContainer} onPress={this.onCheck} >
+          <View style={confirmStyles.checkboxContainer}>
+            <Image source={this.state.checked ? checked : unchecked} />
+          </View>
+          <View style={confirmStyles.confirmTextContainer}>
+            <TextOpenSans style={confirmStyles.explanationFont}>
+              {'Ticking this box makes your Travelgram private and it will not show up in the "Latest Travelgram" section.'}
             </TextOpenSans>
-          </TouchableOpacity>
-        </View>
+          </View>
+        </TouchableOpacity>
       </View>
-    );
-  }
+      <View style={createStyles.buttonOuterContainer}>
+        <TouchableOpacity style={createStyles.buttonContainer} onPress={this.props.navigateForward}>
+          <TextOpenSans style={StyleSheet.flatten(createStyles.buttonFont)}>
+            {"I got it, let's go !"}
+          </TextOpenSans>
+        </TouchableOpacity>
+      </View>
+    </View>
+    )
 }
 
 ConfirmView.propTypes = propTypes;

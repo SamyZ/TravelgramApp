@@ -4,7 +4,7 @@ import backgroundStyles from '../styles/backgroundStyles';
 import backgroundImage from '../../assets/background.jpg';
 
 const propTypes = {
-  children: React.PropTypes.array,
+  children: React.PropTypes.any,
 };
 
 const BackgroundView = props => (

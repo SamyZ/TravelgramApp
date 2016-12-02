@@ -1,16 +1,12 @@
 import { StyleSheet } from 'react-native';
-import { navbarHeight, marginInput, marginTop, buttonFlex, iconFlex } from './createStyles';
+import { iconFlex } from './createStyles';
 import mainStyles from '../mainStyles';
-
 
 const friendListStyles = StyleSheet.create({
   mainContainer: {
     position: 'absolute',
-    marginLeft: marginInput,
-    marginRight: marginInput,
     zIndex: 10,
     flexDirection: 'row',
-    top: 82,
   },
   leftContainer: {
     flex: iconFlex,

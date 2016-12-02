@@ -2,10 +2,8 @@ import { StyleSheet } from 'react-native';
 import mainStyles from '../mainStyles';
 
 const confirmStyles = StyleSheet.create({
-  mainContainer: {
-    flex: 1,
-  },
   contentContainer: {
+    flex: 1,
     alignItems: 'center',
     justifyContent: 'space-around',
   },
@@ -14,9 +12,6 @@ const confirmStyles = StyleSheet.create({
     marginRight: 30,
     flexDirection: 'row',
     alignItems: 'center',
-  },
-  instaShareImage: {
-    margin: 20,
   },
   checkboxContainer: {
     alignItems: 'center',

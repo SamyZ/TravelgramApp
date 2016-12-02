@@ -29,7 +29,7 @@ const InputView = props => (
       </View>
     </View>
     {props.friendsContainer ?
-      <View style={inputStyles.friendsContainer} >
+      <View>
         <FriendsContainer inputText={props.friendsFilterText} selectFriend={props.selectFriend} />
       </View>
     : false}

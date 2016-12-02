@@ -30,9 +30,9 @@ class ConfirmView extends React.Component {
     <View style={createStyles.mainContainer}>
       <View style={confirmStyles.contentContainer}>
         <TextOpenSans style={confirmStyles.explanationFont}>
-            In order for your pictures to be geolocated on the map, add a location when you publish them on Instagram !
-          </TextOpenSans>
-        <Image source={instaShare} style={confirmStyles.instaShareImage} />
+          In order for your pictures to be geolocated on the map, add a location when you publish them on Instagram !
+        </TextOpenSans>
+        <Image source={instaShare} />
         <TouchableOpacity style={confirmStyles.confirmContainer} onPress={this.onCheck} >
           <View style={confirmStyles.checkboxContainer}>
             <Image source={this.state.checked ? checked : unchecked} />

@@ -9,9 +9,12 @@ export const navbarHeight = 60;
 const CreateStyles = StyleSheet.create({
   mainContainer: {
     flex: 1,
-    justifyContent: 'space-around',
     marginTop: navbarHeight,
     backgroundColor: mainStyles.color.backgroundNeutral,
+  },
+  contentContainer: {
+    flex: 1,
+    justifyContent: 'space-around',
   },
   selectedFriendsContainer: {
     flexDirection: 'row',
@@ -38,6 +41,7 @@ const CreateStyles = StyleSheet.create({
     marginLeft: 10,
   },
   buttonOuterContainer: {
+    flex: 0.2,
     alignItems: 'center',
     justifyContent: 'center',
   },
